@@ -1,0 +1,40 @@
+.container_main{
+    font-family: Roboto!important;
+    background-color: #f2f1ec;
+}
+body{
+
+}
+a{
+    color: #383032!important;
+}
+
+.container-nav{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+}
+.container-nav img{
+    width: 60%;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/*Home*/
+.container-photosession{
+    border-top: 1px black solid;
+    display: flex;
+}
+.container-photosession img{
+    width: 30%  ;
+}
+
+/*SALES*/
+.sales_toplinks{
+    display: flex;
+    font-size: 24px;
+}
+

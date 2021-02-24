@@ -1,0 +1,242 @@
+
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+body{
+    background-color: #f0f0f0;
+
+}
+h5{
+    text-align: center;
+}
+
+/*---------------NAV--------------*/
+.container-nav{
+    background-color: #ffffff;
+    height: 45px;
+    padding: 3px 3px 3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: inline-flex;
+    margin-left: 368px;
+    margin-right: 300px;
+}
+.nav-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+;
+}
+.nav-image img{
+    width: 60%;
+    margin-left: 18px;
+}
+.hamburgor{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+.rightsection{
+    margin-left: 678px;
+}
+.rightsection i{
+    margin: 0px 5px 0px 5px;
+}
+.profilesection{
+    margin-left: 28px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+
+}
+.profilesection p{
+    margin-bottom: 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+
+
+
+
+
+
+/*---------------HERO-----------------*/
+.container-hero{
+    margin-left: 368px;
+    margin-right: 368px;
+    display: inline-flex;
+}
+.hero{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: table-caption;
+    width: 40%;
+}
+.hero p{
+    text-align: center;
+    color: #abb3b8;
+}
+.hero-sector1{
+    display: inline-flex;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.sector1-icon{
+    background-color: #e46969;
+}
+.sector1-icon i{
+    width: 161px;
+    font-size: 111px;
+    color: white;
+    padding: 25px 25px 25px 52px;
+}
+
+
+.hero-sector2{
+    display: inline-flex;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.sector2-icon{
+    background-color: #69a3e4;
+}
+.sector2-data{
+    width: 200px;
+}
+.sector2-icon i{
+    width: 161px;
+    font-size: 111px;
+    color: white;
+    padding: 25px 25px 25px 42px;
+}
+
+.hero-sector3{
+    display: inline-flex;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.sector3-icon{
+    background-color: #e4da69;
+}
+.sector3-data{
+    width: 200px;
+}
+.sector3-icon i{
+    width: 161px;
+    font-size: 111px;
+    color: white;
+    padding: 25px 25px 25px 42px;
+}
+.temp_data{
+    font-size: 70px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.temp_data p{
+
+}
+.temp_text{
+    font-weight: 100;
+}
+.sector1-data {
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.hero-sector2{
+
+}
+.hero-sector3{
+
+}
+
+.hero-datesection{
+    display: inline-flex;
+    width: 361px;
+    margin-bottom: 20px;
+}
+.hero-date-day{
+    margin-left: 0;
+    margin-right: 0;
+    width: 161px;
+    height: 35px;
+    color: white;
+    background-color: #10cab7;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.hero-date-day p{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+}
+.hero-date-date{
+    background-color: white;
+    margin-right: 0;
+    margin-left: 0;
+    width: 200px;
+    height: 35px;
+
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.hero-date-date p{
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.hero-graphs img{
+    margin-bottom: 31px;
+    width: 743px;
+}
+.hero-graphs{
+    background-color: white;
+    margin: 20px 238px 30px 40px;
+    width: 100%;
+
+    font-size: 1.1em;
+}
+.graph-header{
+    display: inline-flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.graph-items{
+    margin: 20px 20px 20px 40px;
+}
+.graph-items a{
+    color: grey;
+}
+.graph-items i{
+    margin-right: 22px;
+}
+.graph-header i{
+    font-size: 2em;
+    color: cyan;
+}
+.graph-header-left{
+    display: inline-flex;
+    margin-left: 40px;
+}
+.graph-header-left p{
+    margin-left: 15px;
+}
+.graph-header-right{
+    margin-right: 30px;
+}
