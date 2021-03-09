@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //data ophalen uit database
+        $alldata = DB::table('messages')->get();
+        //get day of the week
+        return view('home', [ 'alldata' => $alldata]);
+
         return view('home');
     }
 }

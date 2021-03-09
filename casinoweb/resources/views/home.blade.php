@@ -16,20 +16,27 @@
     <!-- Styles -->
     <title>CasinoLotto</title>
 </head>
-<body style="background: #f0f0f0">
+<body>
 <div class="container-nav">
-    <div class="nav" style="display: inline-flex">
-        <i class="fas fa-bars" style="margin-top: 5px"></i>
+    <div class="nav" >
         <div class="nav-image">
-            <a href="{{ redirect('products') }}" style="margin-bottom: 5px"><img src="Hello_There_.png" alt="logo"></a>
+            <a href="{{ redirect('products') }}" style="margin-bottom: 5px"><img src="logo.PNG" alt="logo"></a>
         </div>
-        <div class="rightsection">
-            <i class="fas fa-comments"></i>
-            <i class="fas fa-bell"></i>
+
+        {{--<div class="rightsection">--}}
+            {{--<i class="fas fa-comments"></i>--}}
+            {{--<i class="fas fa-bell"></i>--}}
+        {{--</div>--}}
+        <div class="games">
+            <a href="DogRaces">Dograces</a>
+            <a href="DogRaces">Rock Paper Scissors</a>
+            <a href="DogRaces">3 card poker</a>
         </div>
-        {{ Auth::user()->user_credits }}
+        <p style="color: white">₿ {{ Auth::user()->user_credits }} </p>
+
 
         <div class="profilesection">
+
         @if (!Auth::check())
                 <a href="login">Login</a>
                 <a href="register">Register</a>
@@ -69,13 +76,21 @@
                     echo date('d F Y');?></p>
             </div>
         </div>
+        @foreach($alldata as $message)
+            <div class="hero-sector1">
+                <div class="sector1-data">
+                    <p class="temp_data">{{$message->message}}</p>
+                    <p class="temp_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ducimus esse fugit ipsum libero odio quasi, quibusdam reiciendis vel veniam? Blanditiis ducimus eligendi itaque magni quia reiciendis similique tempora voluptas?</p>
+                </div>
+            </div>
+        @endforeach
 
     </div>
     <div class="hero-graphs">
         <div class="graph-header">
             <div class="graph-header-left">
                 <i class="fas fa-clipboard-list"></i>
-                <p>My crops</p>
+                <p>Current leaderboard</p>
             </div>
             <div class="graph-header-right">
                 <i class="fas fa-caret-down"></i>

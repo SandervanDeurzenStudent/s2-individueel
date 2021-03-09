@@ -5,8 +5,7 @@
     padding: 0 auto;
 }
 body{
-    background-color: #f0f0f0;
-
+    background-color: #2E3249!important;
 }
 h5{
     text-align: center;
@@ -14,7 +13,8 @@ h5{
 
 /*---------------NAV--------------*/
 .container-nav{
-    background-color: #ffffff;
+    background-color: #292e34;
+    /*background-color: #ffffff;*/
     height: 45px;
     padding: 3px 3px 3px 3px;
     display: flex;
@@ -23,7 +23,9 @@ h5{
 }
 .nav{
     display: inline-flex;
-    margin-left: 368px;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 310px;
     margin-right: 300px;
 }
 .nav-image{
@@ -59,7 +61,14 @@ h5{
     margin-bottom: 0px;
     padding: 0px 10px 0px 10px;
 }
-
+.games a{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.games{
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -79,13 +88,11 @@ h5{
     width: 40%;
 }
 .hero p{
-    text-align: center;
-    color: #abb3b8;
 }
 .hero-sector1{
     display: inline-flex;
     background-color: white;
-    margin-bottom: 10px;
+    width: 100%;
 }
 .sector1-icon{
     background-color: #e46969;
@@ -134,11 +141,7 @@ h5{
     padding: 25px 25px 25px 42px;
 }
 .temp_data{
-    font-size: 70px;
-    font-weight: 100;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
 }
 .temp_data p{
 
@@ -147,11 +150,7 @@ h5{
     font-weight: 100;
 }
 .sector1-data {
-    width: 200px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+ margin-left: 10px;
 }
 .hero-sector2{
 
