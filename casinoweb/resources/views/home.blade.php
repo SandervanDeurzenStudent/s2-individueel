@@ -20,7 +20,7 @@
 <div class="container-nav">
     <div class="nav" >
         <div class="nav-image">
-            <a href="{{ redirect('products') }}" style="margin-bottom: 5px"><img src="logo.PNG" alt="logo"></a>
+            <a href="{{ redirect('home') }}" style="margin-bottom: 5px"><img src="logo.PNG" alt="logo"></a>
         </div>
 
         {{--<div class="rightsection">--}}
@@ -28,7 +28,7 @@
             {{--<i class="fas fa-bell"></i>--}}
         {{--</div>--}}
         <div class="games">
-            <a href="DogRaces">Dograces</a>
+            <a href="Hondenrace.exe">Dograces</a>
             <a href="DogRaces">Rock Paper Scissors</a>
             <a href="DogRaces">3 card poker</a>
         </div>
@@ -42,7 +42,7 @@
                 <a href="register">Register</a>
             @else
                 <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->user_name }} <span class="caret"></span>
                     </a>
 
@@ -77,29 +77,36 @@
             </div>
         </div>
         @foreach($alldata as $message)
-            <div class="hero-sector1">
+            <div class="hero-sector1" >
                 <div class="sector1-data">
-                    <p class="temp_data">{{$message->message}}</p>
-                    <p class="temp_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ducimus esse fugit ipsum libero odio quasi, quibusdam reiciendis vel veniam? Blanditiis ducimus eligendi itaque magni quia reiciendis similique tempora voluptas?</p>
+                    {{--<p class="temp_data" style="color: orange;">{{$message->user_id}}</p>--}}
+                    <p class="temp_data" style="color: orange;">Sander van Deurzen</p>
+                    <p class="temp_text" style="color: #ffffff;">{{$message->message}}</p>
                 </div>
+
             </div>
         @endforeach
+        <form action="{{ url('/sendmessage/')}}" accept-charset="UTF-8" method="post">
+            @csrf
+            <input type="text" placeholder="maak je bericht" name="message">
+            <input type="submit" value="Versturen!">
 
+        </form>
     </div>
     <div class="hero-graphs">
         <div class="graph-header">
             <div class="graph-header-left">
                 <i class="fas fa-clipboard-list"></i>
-                <p>Current leaderboard</p>
+                <p>Current leaderboard (in credits)</p>
             </div>
-            <div class="graph-header-right">
-                <i class="fas fa-caret-down"></i>
-            </div>
+
         </div>
         <div class="graph-items">
-            {{--@foreach($alldata as $producten)--}}
-                {{--<p><i class="fas fa-pepper-hot"></i><a href="product/{{$producten->plant_id}}">{{$producten->plant_name}}</a></p>--}}
-            {{--@endforeach--}}
+                <ul>
+                    @foreach($leaderboardData as $players)
+                        <i><p>{{$players->id}} {{$players->user_name}} {{$players->user_credits}}</p></i>
+                    @endforeach
+                </ul>
         </div>
     </div>
 </div>

@@ -91,7 +91,7 @@ h5{
 }
 .hero-sector1{
     display: inline-flex;
-    background-color: white;
+    background-color:  #111017;
     width: 100%;
 }
 .sector1-icon{
@@ -216,9 +216,7 @@ h5{
     width: 100%;
     border-bottom: 1px solid grey;
 }
-.graph-items{
-    margin: 20px 20px 20px 40px;
-}
+
 .graph-items a{
     color: grey;
 }

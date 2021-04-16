@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+//Route::post('/sendMessage', 'HomeController@sendMessage');
+//Route::get('/sendMessage', [App\Http\Controllers\HomeController::class, 'index']);
+Route::post('/sendmessage/', [App\Http\Controllers\HomeController::class, 'sendMessage'])->name('sendMessage');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
