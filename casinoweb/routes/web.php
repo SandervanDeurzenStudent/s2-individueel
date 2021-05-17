@@ -24,3 +24,4 @@ Route::post('/sendmessage/', [App\Http\Controllers\HomeController::class, 'sendM
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/trades', [App\Http\Controllers\TradeController::class, 'index'])->name('trades');

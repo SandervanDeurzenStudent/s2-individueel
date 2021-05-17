@@ -24,16 +24,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        //data ophalen uit database
-        $alldata = DB::table('messages')->get();
-        $leaderboardData = DB::table('users')->orderByDesc('user_credits')->get();
-        $b = DB::table('users')->orderByDesc('user_credits')->get();
+        public function index()
+        {
+            //data ophalen uit database
+            $alldata = DB::table('messages')->get();
+            $leaderboardData = DB::table('users')->orderByDesc('user_credits')->get();
+            $b = DB::table('users')->orderByDesc('user_credits')->get();
 
 
-        return view('home', [ 'alldata' => $alldata, 'leaderboardData' => $leaderboardData, 'leaderboardcount' => $b]);
-    }
+            return view('home', [ 'alldata' => $alldata, 'leaderboardData' => $leaderboardData, 'leaderboardcount' => $b]);
+        }
 
 
     public function sendMessage(Request $request)

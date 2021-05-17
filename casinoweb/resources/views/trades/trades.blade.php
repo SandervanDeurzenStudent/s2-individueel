@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,8 +23,8 @@
         </div>
 
         {{--<div class="rightsection">--}}
-            {{--<i class="fas fa-comments"></i>--}}
-            {{--<i class="fas fa-bell"></i>--}}
+        {{--<i class="fas fa-comments"></i>--}}
+        {{--<i class="fas fa-bell"></i>--}}
         {{--</div>--}}
         <div class="games">
             <a href="Hondenrace.exe">Dograces</a>
@@ -37,7 +36,7 @@
 
         <div class="profilesection">
 
-        @if (!Auth::check())
+            @if (!Auth::check())
                 <a href="login">Login</a>
                 <a href="register">Register</a>
             @else
@@ -89,9 +88,15 @@
         @endforeach
         <form action="{{ url('/sendmessage/')}}" accept-charset="UTF-8" method="post">
             @csrf
-            <input type="text" placeholder="maak je bericht" name="message">
+            <select class="form-control" name="product_id">
+                @foreach ($leaderboardData as $players)
+                    <option value="{{ $players->user_name }}" {{ ( $players->id) ? 'selected' : '' }}>
+                        {{ $players->user_name }}
+                    </option>
+                @endforeach
+            </select>
+            <input type="number" name="creditAmount" max="10000">
             <input type="submit" value="Versturen!">
-
         </form>
     </div>
     <div class="hero-graphs">
@@ -103,11 +108,11 @@
 
         </div>
         <div class="graph-items">
-                <ul>
-                    @foreach($leaderboardData as $players)
-                        <i><p>{{$players->id}} {{$players->user_name}} {{$players->user_credits}}</p></i>
-                    @endforeach
-                </ul>
+            <ul>
+                @foreach($leaderboardData as $players)
+                    <i><p>{{$players->id}} {{$players->user_name}} {{$players->user_credits}}</p></i>
+                @endforeach
+            </ul>
         </div>
     </div>
 </div>

@@ -30,6 +30,16 @@ class CreateUsersTable extends Migration
 
             $table->foreign('user_id')->references('id')->on('users');
         });
+        Schema::table('rewards', function (Blueprint $table) {
+            $table->unsignedBigInteger('user_id');
+
+            $table->foreign('user_id')->references('id')->on('users');
+        });
+        Schema::table('trades', function (Blueprint $table) {
+            $table->unsignedBigInteger('user_id');
+
+            $table->foreign('user_id')->references('id')->on('users');
+        });
     }
 
     /**
