@@ -194,6 +194,7 @@
             this.lbl_p1balance.Size = new System.Drawing.Size(13, 13);
             this.lbl_p1balance.TabIndex = 18;
             this.lbl_p1balance.Text = "0";
+            this.lbl_p1balance.Visible = false;
             // 
             // lbl_p2balance
             // 
@@ -203,6 +204,7 @@
             this.lbl_p2balance.Size = new System.Drawing.Size(13, 13);
             this.lbl_p2balance.TabIndex = 19;
             this.lbl_p2balance.Text = "0";
+            this.lbl_p2balance.Visible = false;
             // 
             // lbl_p3balance
             // 
@@ -212,6 +214,7 @@
             this.lbl_p3balance.Size = new System.Drawing.Size(13, 13);
             this.lbl_p3balance.TabIndex = 20;
             this.lbl_p3balance.Text = "0";
+            this.lbl_p3balance.Visible = false;
             // 
             // lbl_player1name
             // 
@@ -221,6 +224,7 @@
             this.lbl_player1name.Size = new System.Drawing.Size(29, 13);
             this.lbl_player1name.TabIndex = 21;
             this.lbl_player1name.Text = "label";
+            this.lbl_player1name.Visible = false;
             this.lbl_player1name.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // lbl_player2name
@@ -241,6 +245,7 @@
             this.lbl_player3name.Size = new System.Drawing.Size(29, 13);
             this.lbl_player3name.TabIndex = 23;
             this.lbl_player3name.Text = "label";
+            this.lbl_player3name.Visible = false;
             // 
             // NuD_player1
             // 
@@ -248,6 +253,7 @@
             this.NuD_player1.Name = "NuD_player1";
             this.NuD_player1.Size = new System.Drawing.Size(80, 20);
             this.NuD_player1.TabIndex = 24;
+            this.NuD_player1.Visible = false;
             // 
             // NuD_player2
             // 
@@ -263,6 +269,7 @@
             this.NuD_player3.Name = "NuD_player3";
             this.NuD_player3.Size = new System.Drawing.Size(80, 20);
             this.NuD_player3.TabIndex = 26;
+            this.NuD_player3.Visible = false;
             // 
             // cb_player1
             // 

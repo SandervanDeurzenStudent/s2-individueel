@@ -29,8 +29,8 @@
         {{--</div>--}}
         <div class="games">
             <a href="Hondenrace.exe">Dograces</a>
-            <a href="DogRaces">Rock Paper Scissors</a>
-            <a href="DogRaces">3 card poker</a>
+            <a href="Hondenrace.exe">Rock Paper Scissors</a>
+            <a href="Hondenrace.exe">3 card poker</a>
         </div>
         <p style="color: white">₿ {{ Auth::user()->user_credits }} </p>
 

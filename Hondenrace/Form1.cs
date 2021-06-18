@@ -126,7 +126,6 @@ namespace Hondenrace
         private void btn_start_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -141,7 +140,6 @@ namespace Hondenrace
                     timer1.Stop();
                     //winningcredits
                     int selectedIndex = cb_player1.SelectedIndex;
-                    MessageBox.Show(i.ToString());
                     if (selectedIndex == i)
                     {
                         int winnersCredits = Convert.ToInt32(playerArray[1].NuD.Value) * 4;
